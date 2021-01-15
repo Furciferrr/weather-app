@@ -1,0 +1,10 @@
+.weekDayWeatherItem {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.day {
+    min-width: 97px;
+    text-align: initial;
+}

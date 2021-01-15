@@ -1,0 +1,16 @@
+.timeWrapper {
+    max-width: 480px;
+    margin: 0 auto;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+    
+}
+
+.clear {
+    clear:both;
+}
+
+.weekDayWrapper {
+    margin: 0 auto;
+    max-width: 475px;
+}

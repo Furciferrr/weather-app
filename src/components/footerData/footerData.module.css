@@ -1,0 +1,8 @@
+.footerDiscription {
+    display: flex;
+    margin: 0 auto;
+    max-width: 480px;
+    justify-content: space-around;
+}
+
+

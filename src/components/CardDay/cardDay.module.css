@@ -1,0 +1,31 @@
+.cardDayWrapp {
+    width: 200px;
+    background-color: #F8F9FA;
+    border: solid #4e4c4c 1px;
+    margin: 20px;
+    padding: 10px;;
+}
+
+.cardDayWrapp > h3 {
+    margin: 5px;
+}
+
+.cardDayWrapp > img {
+    width: 170px
+}
+
+.discription {
+    color: white;
+    background-color: #44aadd;
+    width:150px;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 3px;
+
+}
+
+.degree {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
