@@ -11,6 +11,9 @@ class Weather extends React.Component {
     const listDaysDegree = this.props.state.list.filter(list => list.dt_txt.includes('15:00:00'))
     if (this.props.getWeekDay(this.props.state.list[0].dt,{ hour: 'numeric' }) < 12) {
         listDaysDegree.pop()
+    } else if (this.props.getWeekDay(this.props.state.list[0].dt, { weekday: 'long' }) !== this.props.getWeekDay(listDaysDegree[0].dt, { weekday: 'long' })) {
+        listDaysDegree.unshift(this.props.state.list[0])
+        listDaysDegree.pop()
     }
      
         return (
@@ -31,7 +34,6 @@ class Weather extends React.Component {
                         </div>
                         <div  className={classes.weekDayWrapper}>
                         { listDaysDegree.map((item, index) => {
-
                                 return <WeekDayWeather key={index} weekDay={this.props.getWeekDay(item.dt, { weekday: 'long' })}
                                 weatherImage={snowFlake}
                                 degreeDay={Math.round(item.main.temp)}
